@@ -1,0 +1,26 @@
+{
+    "Home": {
+        "title": "Chatbot para2 Padres de Necesidades Especiales",
+        "subtitle": "¡Pregúntame lo que sea sobre cómo apoyar a tu hijo!",
+        "inputPlaceholder": "Escribe tu pregunta aquí...",
+        "sendButton": "Enviar",
+        "noResponse": ""
+    },
+    "Chat": {
+        "emptyInput": "¡Por favor, pregúntame algo!",
+        "responses": {
+            "meltdown": {
+                "reply": "Lamento mucho que estés lidiando con una crisis—es duro para todos. Intenta crear un espacio tranquilo con luces bajas o un objeto favorito. ¡Respirar profundo también ayuda, para ambos!",
+                "resource": "Aquí tienes un artículo sobre cómo manejar crisis: https://www.understood.org/es/articles/understanding-meltdowns"
+            },
+            "iep": {
+                "reply": "Un IEP (Programa de Educación Individualizada) es un plan para apoyar las necesidades únicas de tu hijo en la escuela. Te reunirás con maestros y especialistas para establecer metas y adaptaciones. ¡Puede ser abrumador, pero tú puedes con esto!",
+                "resource": "Aprende más sobre IEPs aquí: https://www.pacer.org/parent/php/PHP-c2-es.pdf"
+            },
+            "default": {
+                "reply": "¡Estoy aquí para ayudar! ¿Puedes contarme más sobre lo que tienes en mente? Puedo ofrecer consejos o recursos.",
+                "resource": null
+            }
+        }
+    }
+}

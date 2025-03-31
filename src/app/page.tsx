@@ -2,8 +2,10 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('Home');
   const [message, setMessage] = useState<string>('');
   const [response, setResponse] = useState<string>('');
 
@@ -23,23 +25,21 @@ export default function Home() {
 
   return (
     <div className="max-w-2xl mx-auto p-6 text-center">
-      <h1 className="text-3xl font-bold mb-2">Special Needs Parent Chatbot</h1>
-      <p className="text-gray-600 mb-6">
-        Ask me anything about supporting your child!
-      </p>
+      <h1 className="text-3xl font-bold mb-2">{t('title')}</h1>
+      <p className="text-gray-600 mb-6">{t('subtitle')}</p>
       <form onSubmit={handleSubmit} className="flex gap-4 mb-6">
         <input
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="Type your question here..."
+          placeholder={t('inputPlaceholder')}
           className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
           type="submit"
           className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
         >
-          Send
+          {t('sendButton')}
         </button>
       </form>
       {response && (
